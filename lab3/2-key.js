@@ -1,5 +1,6 @@
 'use strict'
 
+let length = Math.floor(Math.random() * 100) + 1;
 const generateKey = (length, possible) => {
     let key = [];
     for (let i = 0; i < length; i++) {
@@ -8,4 +9,4 @@ const generateKey = (length, possible) => {
     return key.toString().replaceAll(",", "");
   };
   
-  console.log(generateKey(35, 'abcdefghijklmnopqrstuvwxyz0123456789'));
+  console.log(generateKey(length, 'abcdefghijklmnopqrstuvwxyz0123456789'));

@@ -10,5 +10,4 @@ const random = (min, max) => {
 
 console.log(random(0, 100)); 
 
-
 module.exports = { random };
